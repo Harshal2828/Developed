@@ -7,7 +7,7 @@ void  get_file_data(const char* fname, struct bank_details* second){    // Fucnt
      
     fread(second, sizeof(struct bank_details),1, read_ptr);             // Data of file gets copied to the object
             
-    fclose(read_ptr);                                                   // close the file opened in read mode
+    fclose(read_ptr);                                                   // close the file opened in read mode using file pointer
 
 }
 
